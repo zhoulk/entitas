@@ -8,5 +8,7 @@ public class InputFeature : Feature {
     {
         Add(new CreateSystem(contexts));
         Add(new MouseSystem(contexts));
+        Add(new StartMoveSystem(contexts));
     }
 }
+

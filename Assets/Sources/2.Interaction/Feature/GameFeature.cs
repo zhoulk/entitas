@@ -8,5 +8,9 @@ public class GameFeature : Feature {
     {
         Add(new AddViewSystem(contexts));
         Add(new RenderSpriteSystem(contexts));
+        Add(new PositionSystem(contexts));
+        Add(new MoveSystem(contexts));
+        Add(new DirectionSystem(contexts));
+        Add(new RotateSystem(contexts));
     }
 }

@@ -17,7 +17,11 @@ public class CreateSystem : ReactiveSystem<InputEntity>
     {
         foreach(InputEntity entity in entities)
         {
-            _gameContext.CreateEntity().AddInterActionSprite("Bullet");
+            GameEntity gameEntity = _gameContext.CreateEntity();
+            gameEntity.AddInterActionSprite("Bullet");
+            Vector2 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            gameEntity.AddInterActionPosition(worldPos);
+            gameEntity.isInterActionMoveComplete = true;
         }
     }
 

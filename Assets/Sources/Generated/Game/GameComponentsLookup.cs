@@ -8,30 +8,66 @@
 //------------------------------------------------------------------------------
 public static class GameComponentsLookup {
 
-    public const int InterActionDirection = 0;
-    public const int InterActionMove = 1;
-    public const int InterActionPosition = 2;
-    public const int InterActionSprite = 3;
-    public const int InterActionView = 4;
-    public const int Log = 5;
+    public const int GameDestroy = 0;
+    public const int GameGameBoard = 1;
+    public const int GameGameBoardItem = 2;
+    public const int GameItemIndex = 3;
+    public const int GameLoadPrefab = 4;
+    public const int GameMovable = 5;
+    public const int GameDestroyListener = 6;
+    public const int GameItemIndexListener = 7;
+    public const int GameLoadPrefabListener = 8;
+    public const int InterActionDirection = 9;
+    public const int InterActionMoveComplete = 10;
+    public const int InterActionMove = 11;
+    public const int InterActionPosition = 12;
+    public const int InterActionSprite = 13;
+    public const int InterActionView = 14;
+    public const int Log = 15;
+    public const int MultiReactiveDestroy = 16;
+    public const int MultiReactiveView = 17;
 
-    public const int TotalComponents = 6;
+    public const int TotalComponents = 18;
 
     public static readonly string[] componentNames = {
+        "GameDestroy",
+        "GameGameBoard",
+        "GameGameBoardItem",
+        "GameItemIndex",
+        "GameLoadPrefab",
+        "GameMovable",
+        "GameDestroyListener",
+        "GameItemIndexListener",
+        "GameLoadPrefabListener",
         "InterActionDirection",
+        "InterActionMoveComplete",
         "InterActionMove",
         "InterActionPosition",
         "InterActionSprite",
         "InterActionView",
-        "Log"
+        "Log",
+        "MultiReactiveDestroy",
+        "MultiReactiveView"
     };
 
     public static readonly System.Type[] componentTypes = {
+        typeof(Game.DestroyComponent),
+        typeof(Game.GameBoardComponent),
+        typeof(Game.GameBoardItemComponent),
+        typeof(Game.ItemIndexComponent),
+        typeof(Game.LoadPrefabComponent),
+        typeof(Game.MovableComponent),
+        typeof(GameDestroyListenerComponent),
+        typeof(GameItemIndexListenerComponent),
+        typeof(GameLoadPrefabListenerComponent),
         typeof(InterAction.DirectionComponent),
+        typeof(InterAction.MoveCompleteComponent),
         typeof(InterAction.MoveComponent),
         typeof(InterAction.PositionComponent),
         typeof(InterAction.SpriteComponent),
         typeof(InterAction.ViewComponent),
-        typeof(LogComponent)
+        typeof(LogComponent),
+        typeof(MultiReactive.DestroyComponent),
+        typeof(MultiReactive.ViewComponent)
     };
 }

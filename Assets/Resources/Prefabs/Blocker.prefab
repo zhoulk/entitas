@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 406346}
   - component: {fileID: 21215624}
   - component: {fileID: 6112584}
-  - component: {fileID: 114330009023958608}
+  - component: {fileID: 114985707697137600}
   m_Layer: 0
   m_Name: Blocker
   m_TagString: Untagged
@@ -111,7 +111,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127200}
   m_IsPrefabParent: 1
---- !u!114 &114330009023958608
+--- !u!114 &114985707697137600
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -119,6 +119,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 127200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa46903c8f8b0f3428b6e638dc04fc1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 43a3be146c8bbc64ea0e747a06b64cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

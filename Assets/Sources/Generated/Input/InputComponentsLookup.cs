@@ -9,14 +9,20 @@
 public static class InputComponentsLookup {
 
     public const int InterActionMouse = 0;
+    public const int MultiReactiveDestroy = 1;
+    public const int MultiReactiveView = 2;
 
-    public const int TotalComponents = 1;
+    public const int TotalComponents = 3;
 
     public static readonly string[] componentNames = {
-        "InterActionMouse"
+        "InterActionMouse",
+        "MultiReactiveDestroy",
+        "MultiReactiveView"
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(InterAction.MouseComponent)
+        typeof(InterAction.MouseComponent),
+        typeof(MultiReactive.DestroyComponent),
+        typeof(MultiReactive.ViewComponent)
     };
 }
